@@ -1,70 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>    
-    <style>
-      a{
-        text-decoration: none;
-      }
-      footer{
-        background-color: black;
-        color: white;
-        text-align: center;
-      }
-      p{
-        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      }
-      li{
-        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      }
-    </style>
+  <meta charset="UTF-8">
+  <title>Nimra Tanveer Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000000;
+      color:rgb(129, 27, 27);
+    }
+
+    header {
+      background-color: #252323;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    nav {   
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+      margin: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin:20px;
+      text-decoration: none;
+    }
+
+    .container {
+      padding: 30px;
+    }
+
+    .about, .skills, .projects, .contacts{
+      background-color: #fff;
+      padding: 20px;
+      margin: 5px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    .highlight {
+      color: #ff6600;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-<header>
-    <h1 style="text-align: center; color: brown;">Welcome to My Portfolio</h1><hr>
-    <!-- Header Section -->
-<table width="100%">
-      <tr>
-        <td>
-          <h2 style="font-size: xx-large;">I'm Nimra Tanveer</h2> 
-          <p style="font-size: large; text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">A passionate front end developer</p>
-        </td>
-        <td style="text-align: right;">
-          <img src="Photo.png" alt="My Photo" width="180">
-        </td>
-      </tr>
-</table><hr>
-</header>
- <main> 
-  <!-- About Me Section -->
+
+  <header>
+    <h1>Nimra Tanveer</h1>
+    <p class="highlight">From HTML to Human Touch | I Build With Purpose</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contacts">Contact Me</a>
+  </nav>
+
+
+<section id="about" class="about">
   <h2>About Me</h2>
-  <p>I enjoy exploring new technologies and solving practical problems. I'm currently focused on learning web development and improving my programming skills.</p><hr>  
+  <table>
+    <tr>
+      <td style="width:70%;">
+        <p>Hello! I'm Nimra, a passionate learner who loves creating clean and simple websites. I'm currently diving deeper into web development and enjoy solving real-world problems through code.</p>
+      </td>
+      <td style="text-align:right;">
+        <img src="Photo.png" alt="Profile Picture" class="profile-img" width="150" height="150">
+      </td>
+    </tr>
+  </table>
+</section>
 
-  <!-- Skills Section -->
-  <h2>Skills</h2>
-  <ul>
-    <li>HTML</li>
-    <li>C Programming</li>
-    <li>MS Word, PowerPoint & Excel</li>
-    <li>Technical Troubleshooting</li>
-  </ul>
-  <hr>
+    <section id="skills" class="skills">
+      <h2>My Skills</h2>
+      <ul>
+        <li>HTML5 & CSS3</li>
+        <li>Responsive Design</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
 
-  <!-- Projects Section -->
-  <h2>My Projects</h2>
-  <ol>
-    <li><a href="https://nimratanveer.github.io/html-portfolio/">Simple Portfolio Website</a></li>
-  </ol>
+    <section id="projects" class="projects">
+      <h2>Recent Projects</h2>
+      <ol>
+        <li><a href="https://nimratanveer.github.io/html-portfolio/">Simple Portfolio Website</a></li>
+        <li><a href="https://nimra-tanveer.github.io/portfolio/"> Another portfolio </a></li>
+      </ol>
+    </section>
+    <footer id="contacts" class="contacts">
+     <h2>Contact Me</h2>
+        <form>
+          <label for="name">Name:</label><br>
+          <input type="text" name="name" required><br><br>
+          <label for="email">Email:</label><br>
+          <input type="email" name="email" required><br><br>
+          <label for="message">Message:</label><br>
+          <textarea name="message" rows="4" required></textarea><br><br>
+          <input type="submit" value="Send Message">
+        </form>
+      </footer>
 
-  <!-- Contact Section -->
-  <h2>Contact Me</h2>
-  <a href="nimratanveer0920@gmail.com" target="_blank">Email Account</a></p>
-  <a href="https://www.linkedin.com/in/nimra-tanveer-496b33228?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvXUQPDb0SWePIClUhlLpIw%3D%3D" target="_blank">Linkdin Account</a></p>
-</main>
-<footer>
-    <p style="padding: 30px">&copy; 2025 Nimra Tanveer. All rights reserved.</p>
-</footer>
 </body>
 </html>
